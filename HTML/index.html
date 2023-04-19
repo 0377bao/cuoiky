@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="../IMAGES/HINHANHWEB.png" alt="" class="img">
+        <ul class="header">
+            <li class="header__item">Trang chủ</li>
+            <li class="header__item calenda">Đặt lịch</li>
+        </ul>
+        <table class="table" border="1">
+            <tr>
+                <th>STT</th>
+                <th>Mã bệnh nhân</th>
+                <th>Mật khẩu</th>
+                <th>Ngày khám</th>
+                <th>Phụ thu dịch vụ</th>
+                <th>Chuyên khoa</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>BN-012345</td>
+                <td>12345a</td>
+                <td>12/8/2020</td>
+                <td>1000000</td>
+                <td>Ngoại tổng quát</td>
+            </tr>
+        </table>
+        <h1>21107451 - Huỳnh Quốc Bảo</h1>
+    </div>
+
+    <div class="modal">
+        <div class="modalcontent">
+            <h1>Đặt lịch khám oline</h1>
+            <form action="">
+                <div class="group">
+                    <label for="ma">Mã bệnh nhân</label>
+                    <input type="text" id="ma" class="input" placeholder="Ma benh nhan">
+                    <span>(*)BN-YYYYY</span>
+                </div>
+                <div class="group">
+                    <label for="mk">Mật khẩu</label>
+                    <input type="password" id="mk" class="input" placeholder="Mat khau">
+                    <span>(*)</span>
+                </div>
+                <div class="group">
+                    <label for="ngay">Mã bệnh nhân</label>
+                    <input type="date" id="ngay" class="input" placeholder="mm/dd/yyyy">
+                    <span>(*)</span>
+                </div>
+                <div class="group">
+                    <label for="">Loại dịch vụ</label>
+                    <input type="checkbox" id="benh">
+                    <label for="benh">Khám bệnh theo yêu cầu</label>
+                    <input type="checkbox" id="tri">
+                    <label for="tri">Điều trị ngoại thú</label>
+                    <input type="checkbox" id="bs">
+                    <label for="bs">Bác sĩ theo yêu cầu</label>
+                </div>
+                <div class="group">
+                    <label for="">Chuyên khoa</label>
+                    <select name="" id="select">
+                        <option value="Ngoại tổng quát">Ngoại tổng quát</option>
+                        <option value="Nhi">Nhi</option>
+                        <option value="Nội tổng quát">Nội tổng quát</option>
+                    </select>
+                </div>
+                <span class="datlich">Đặt lịch</span>
+                <span class="close">Close</span>
+                <span class="x close">x</span>
+            </form>
+        </div>
+    </div>
+
+    <script src="../JS/main.js"></script>
+</body>
+
+</html>
