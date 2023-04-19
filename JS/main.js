@@ -28,6 +28,15 @@ submit.onclick = () => {
 function kiemtra() {
     var ma = $("#ma").value;
     var matkhau = $("#mk").value;
-    Date ngay = new Date($("#ngay").value);
-    alert(ma + matkhau + ngay);
+    var ngay = new Date($("#ngay").value);
+    var gia = 0;
+    var chuyenkhoa = $("#select").value;
+    if ($("#benh").checked) gia += 500000;
+    if ($("#tri").checked) gia += 500000;
+    if ($("#bs").checked) gia += 500000;
+    if (ma === "" || matkhau === "" || $("#ngay").value === "") {
+        alert("Chưa nhập đủ dữ liệu");
+    } else {
+
+    }
 }
